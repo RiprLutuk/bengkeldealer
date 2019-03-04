@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tentang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riprlutuk.bengkeldealer.helper.activity_tentang">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/ToolbarTitleText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nama_aplikasi_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_image_view"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/app_name"
+                android:textColor="@color/textColor"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/versi_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama_aplikasi_text_view"
+                android:gravity="center_horizontal"
+                android:text="@string/version"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tentang_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama_aplikasi_text_view"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:text="@string/tentang1"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tentang2_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tentang_text_view"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/tentang2"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/dev_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tentang2_text_view"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:text="@string/tentang_apl_desainkode"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/nama_dev_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dev_text_view"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/tentang_apl_desainer"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/email_dev_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama_dev_text_view"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:text="@string/tentang_apl_mail"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/logo_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/logo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

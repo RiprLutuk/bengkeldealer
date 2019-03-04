@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tentang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riprlutuk.bengkeldealer.helper.activity_tentang">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/ToolbarTitleText" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/logo_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/logo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/nama_aplikasi_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo_image_view"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/app_name"
+                android:textColor="@color/textColor"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/versi_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama_aplikasi_text_view"
+                android:gravity="center_horizontal"
+                android:text="@string/version"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/bantuan_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/bantuan1"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp"
+                android:layout_below="@+id/versi_text_view"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/bantuan_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/bantuan"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp"
+                android:layout_below="@+id/bantuan_text"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/bantuan_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/bantuan2"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp"
+                android:layout_below="@+id/bantuan_text2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/bantuan_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/bantuan3"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp"
+                android:layout_below="@+id/bantuan_text3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/bantuan_text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/bantuan4"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp"
+                android:layout_below="@+id/bantuan_text4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/bantuan_text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/bantuan5"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp"
+                android:layout_below="@+id/bantuan_text5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/bantuan_text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/bantuan6"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp"
+                android:layout_below="@+id/bantuan_text7"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/dev_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bantuan_text8"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/tentang_apl_desainkode"
+                android:textColor="@color/textColor"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/nama_dev_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dev_text_view"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/tentang_apl_desainer"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/email_dev_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nama_dev_text_view"
+                android:gravity="center_horizontal"
+                android:text="@string/tentang_apl_mail"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/www_dev_text_view"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_dev_text_view"
+                android:gravity="center_horizontal"
+                android:text="www.mapscrip.com"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

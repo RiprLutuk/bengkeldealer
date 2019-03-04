@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbardlr"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/ToolbarTitleText" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/dealer_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbardlr"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textSize="17sp" />
+
+    <ListView
+        android:id="@+id/dealer_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/dealer_spinner"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:divider="@color/divider"
+        android:dividerHeight="7dp"
+        android:listSelector="@color/grey_200"
+        android:scrollbarStyle="insideOverlay"/>
+</RelativeLayout>
